@@ -1,0 +1,38 @@
+<html>
+    <head>
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <h2 style="color: white; text-align: center; margin-top: 10px;"> Sorting Visualizer</h2>
+        <script type="text/javascript" src="main.js"></script>
+        <script type="text/javascript" src="\sorting-js/algorithms\Bubble-sort.js"></script>
+        <script type="text/javascript" src="\sorting-js\algorithms\Merge-sort.js"></script>
+        <script type="text/javascript" src="\sorting-js/algorithms\Selection-sort.js"></script>
+        <script type="text/javascript" src="\sorting-js\algorithms\Insertion-sort.js"></script>
+        <script type="text/javascript" src="\sorting-js\algorithms\Quick-sort.js"></script>
+
+         
+    </head>
+    <body style="background-color: #343A40;">
+
+        <nav class="navbar navbar-inverse bg-dark">
+            <div class="container-fluid">
+              <ul class="nav navbar-nav">
+                <li><button id="new_array" class="btn btn-outline-success Generate" onclick="createBars()"> new array </button></li>
+              </ul>
+                <div class="d-flex">
+                    <button id="bubble" class="btn btn-outline-primary bubbleSort" style="margin-left: 10px;" onclick="algo_call('bubble')"> bubble sort </button></li>
+                    <button id="selection" class=" btn btn-outline-primary selectionSort" style="margin-left: 10px;" onclick="algo_call('selection')"> selection sort </button>
+                    <button id="insertion" class="btn btn-outline-primary insertionSort" style="margin-left: 10px;" onclick="algo_call('insertion')"> insertion sort </button>
+                    <button id="quick" class="btn btn-outline-primary quickSort" style="margin-left: 10px;" onclick="algo_call('quick')"> quick sort </button>
+                    <button id="merge" class="btn btn-outline-primary mergeSort" style="margin-left: 10px;" onclick="algo_call('merge')"> merge sort </button>  
+                </div>
+            </div>
+        </nav>
+
+        <div id="view">
+
+        </div>
+        
+    </body>
+</html>
