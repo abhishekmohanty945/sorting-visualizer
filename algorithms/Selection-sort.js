@@ -1,18 +1,39 @@
-async function selection_sort(arr) {
+var animations = [];
+
+function selection_sort(bars){
+    selection_sort_helper(bars);
+    animate(animations);
+}
+
+function selection_sort_helper(arr) {
     for(var i = 0; i < arr.length; i++) {
-        for(var j = i; j < num; j++) {
-            all_bars[i].style.background = "red";
-            all_bars[j].style.background = "red";
+        for(var j = i; j < arr.length; j++) {
+            animations.push(
+                {
+                    action: "compare",
+                    idx1: i,
+                    idx2: j
+                }
+            )
             if(arr[j] < arr[i]) {
-                await new Promise(resolve => setTimeout(() => {resolve(), 2000}));
                 var minimum = arr[i];
                 arr[i] = arr[j];
                 arr[j] = minimum;
-                swap(all_bars[i], all_bars[j]);
+                animations.push(
+                    {
+                        action: "swap",
+                        idx1: i,
+                        idx2: j
+                    }
+                )
             }
-            all_bars[i].style.background = "yellow";
-            all_bars[j].style.background = "yellow";
         }
-        all_bars[i].style.background = "white";
+        animations.push(
+            {
+                action: "color",
+                idx1: i,
+                color: "white"
+            }
+        );
     }
 }

@@ -10,6 +10,13 @@ function quick_sort(arr) {
 function quick_sort_helper(arr, low, high,animations) {
     if(low < high) {
         var p = partition(arr, low, high,animations);
+        animations.push(
+            {
+                action : "color",
+                idx1 : p,
+                color : "white"
+            }
+        );
         quick_sort_helper(arr, low, p-1,animations);
         quick_sort_helper(arr, p+1, high,animations);
     }
