@@ -1,5 +1,6 @@
 var animations = [];
 function quick_sort(arr) {
+    disableSortButtons();
     animations = [];
     // console.log(arr);
     quick_sort_helper(arr, 0, arr.length-1,animations);

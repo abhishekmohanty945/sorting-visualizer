@@ -1,12 +1,6 @@
 var animations = [];
 function bubble_sort(bars) {
-    // document.getElementById("new_array").disable = true;
-    // document.getElementById("bubble").disable = true;
-    // document.getElementById("selection").disable = true;
-    // document.getElementById("insertion").disable = true;
-    // document.getElementById("quick").disable = true;
-    // document.getElementById("merge").disable = true;
-
+    disableSortButtons();
     bubble_sort_helper(bars);
     // console.log(bars*maxValue);
     animate(animations);

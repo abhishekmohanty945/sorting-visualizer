@@ -2,7 +2,6 @@ var bars = [];
 var all_bars = [];
 var no_of_bar;
 var maxValue;
-var flag = flag == null ? false: flag;
 function init() {
     var arr_size = document.getElementById("arr_sz"); 
     arr_size.addEventListener("input", createBars);
@@ -42,8 +41,6 @@ function createBars() {
 }
 
 function algo_call(algo_name) {
-    
-    console.log(flag);
     if(algo_name == 'bubble') {
         bubble_sort(bars);
     }
@@ -63,6 +60,123 @@ function algo_call(algo_name) {
         // flag = true;
         merge_sort(bars);
     }
-    // flag = true;
-    // animate(animations);
 }
+
+
+function disableSortButtons() {
+    document.getElementById("merge").disabled = true;
+    let buttonStyle = document.getElementById("merge").style;
+    // document.getElementById("merge").title = DISABLED_BUTTON;
+    buttonStyle.cursor = "default";
+    buttonStyle.background = "#000000";
+
+    document.getElementById("quick").disabled = true;
+    buttonStyle = document.getElementById("quick").style;
+    // document.getElementById("quick").title = DISABLED_BUTTON;
+    buttonStyle.cursor = "default";
+    buttonStyle.background = "#000000";
+
+    document.getElementById("insertion").disabled = true;
+    buttonStyle = document.getElementById("insertion").style;
+    // document.getElementById("insertion").title = DISABLED_BUTTON;
+    buttonStyle.cursor = "default";
+    buttonStyle.background = "#000000";
+
+    document.getElementById("selection").disabled = true;
+    buttonStyle = document.getElementById("selection").style;
+    // document.getElementById("selection").title = DISABLED_BUTTON;
+    buttonStyle.cursor = "default";
+    buttonStyle.background = "#000000";
+
+    document.getElementById("bubble").disabled = true;
+    buttonStyle = document.getElementById("bubble").style;
+    // document.getElementById("bubble").title = DISABLED_BUTTON;
+    buttonStyle.cursor = "default";
+    buttonStyle.background = "#000000";
+
+    buttonStyle = document.getElementById("new_array").disabled = true;
+    buttonStyle = document.getElementById("new_array").style;
+    // document.getElementById("bubble").title = DISABLED_BUTTON;
+    buttonStyle.cursor = "default";
+    buttonStyle.background = "#000000";
+
+}
+function restoreStoreButtons() {
+    document.getElementById("merge").disabled = false;
+    let buttonStyle = document.getElementById("merge").style;
+    // document.getElementById("merge").title = ENABLED_BUTTON.nlogn;
+    buttonStyle.background = "#47535E";
+    buttonStyle.cursor = "pointer";
+
+    document.getElementById("quick").disabled = false;
+    buttonStyle = document.getElementById("quick").style;
+    // document.getElementById("quick").title = ENABLED_BUTTON.nSquare;
+    buttonStyle.background = "#47535E";
+    buttonStyle.cursor = "pointer";
+
+    document.getElementById("bubble").disabled = false;
+    buttonStyle = document.getElementById("bubble").style;
+    // document.getElementById("bubble").title = ENABLED_BUTTON.nSquare;
+    buttonStyle.background = "#47535E";
+    buttonStyle.cursor = "pointer";
+
+    document.getElementById("selection").disabled = false;
+    buttonStyle = document.getElementById("selection").style;
+    // document.getElementById("selection").title = ENABLED_BUTTON.nSquare;
+    buttonStyle.background = "#47535E";
+    buttonStyle.cursor = "pointer";
+
+    document.getElementById("insertion").disabled = false;
+    buttonStyle = document.getElementById("insertion").style;
+    // document.getElementById("insertion").title = ENABLED_BUTTON.nSquare;
+    buttonStyle.background = "#47535E";
+    buttonStyle.cursor = "pointer";
+
+    document.getElementById("new_array").disabled = false;
+    buttonStyle = document.getElementById("new_array").style;
+    // document.getElementById("insertion").title = ENABLED_BUTTON.nSquare;
+    buttonStyle.background = "#47535E";
+    buttonStyle.cursor = "pointer";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

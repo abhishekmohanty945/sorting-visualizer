@@ -1,6 +1,7 @@
 var animations = [];
 
 function merge_sort(arr) {
+    disableSortButtons();
     // console.log(arr);
     animations = [];
     merge_sort_helper(arr, 0, arr.length-1, animations);
@@ -125,4 +126,5 @@ async function animate(animations) {
         // await new Promise((resolve) => setTimeout(resolve, 2000));
         all_bars[i].style.background = "white";
     }
+    restoreStoreButtons();
 }
