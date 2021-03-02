@@ -1,6 +1,7 @@
 var animations = [];
 
 function insertion_sort(bars) {
+    animations = []
     disableSortButtons();
     insertion_sort_helper(bars);
     animate(animations);

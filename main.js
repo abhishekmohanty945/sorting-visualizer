@@ -65,118 +65,33 @@ function algo_call(algo_name) {
 
 function disableSortButtons() {
     document.getElementById("merge").disabled = true;
-    let buttonStyle = document.getElementById("merge").style;
-    // document.getElementById("merge").title = DISABLED_BUTTON;
-    buttonStyle.cursor = "default";
-    buttonStyle.background = "#000000";
 
     document.getElementById("quick").disabled = true;
-    buttonStyle = document.getElementById("quick").style;
-    // document.getElementById("quick").title = DISABLED_BUTTON;
-    buttonStyle.cursor = "default";
-    buttonStyle.background = "#000000";
 
     document.getElementById("insertion").disabled = true;
-    buttonStyle = document.getElementById("insertion").style;
-    // document.getElementById("insertion").title = DISABLED_BUTTON;
-    buttonStyle.cursor = "default";
-    buttonStyle.background = "#000000";
-
-    document.getElementById("selection").disabled = true;
-    buttonStyle = document.getElementById("selection").style;
-    // document.getElementById("selection").title = DISABLED_BUTTON;
-    buttonStyle.cursor = "default";
-    buttonStyle.background = "#000000";
 
     document.getElementById("bubble").disabled = true;
-    buttonStyle = document.getElementById("bubble").style;
-    // document.getElementById("bubble").title = DISABLED_BUTTON;
-    buttonStyle.cursor = "default";
-    buttonStyle.background = "#000000";
+
+    document.getElementById("selection").disabled = true;
 
     buttonStyle = document.getElementById("new_array").disabled = true;
-    buttonStyle = document.getElementById("new_array").style;
-    // document.getElementById("bubble").title = DISABLED_BUTTON;
-    buttonStyle.cursor = "default";
-    buttonStyle.background = "#000000";
+
+    buttonStyle = document.getElementById("arr_sz").disabled = true;
 
 }
 function restoreStoreButtons() {
     document.getElementById("merge").disabled = false;
-    let buttonStyle = document.getElementById("merge").style;
-    // document.getElementById("merge").title = ENABLED_BUTTON.nlogn;
-    buttonStyle.background = "#47535E";
-    buttonStyle.cursor = "pointer";
 
     document.getElementById("quick").disabled = false;
-    buttonStyle = document.getElementById("quick").style;
-    // document.getElementById("quick").title = ENABLED_BUTTON.nSquare;
-    buttonStyle.background = "#47535E";
-    buttonStyle.cursor = "pointer";
 
     document.getElementById("bubble").disabled = false;
-    buttonStyle = document.getElementById("bubble").style;
-    // document.getElementById("bubble").title = ENABLED_BUTTON.nSquare;
-    buttonStyle.background = "#47535E";
-    buttonStyle.cursor = "pointer";
 
     document.getElementById("selection").disabled = false;
-    buttonStyle = document.getElementById("selection").style;
-    // document.getElementById("selection").title = ENABLED_BUTTON.nSquare;
-    buttonStyle.background = "#47535E";
-    buttonStyle.cursor = "pointer";
 
     document.getElementById("insertion").disabled = false;
-    buttonStyle = document.getElementById("insertion").style;
-    // document.getElementById("insertion").title = ENABLED_BUTTON.nSquare;
-    buttonStyle.background = "#47535E";
-    buttonStyle.cursor = "pointer";
 
     document.getElementById("new_array").disabled = false;
-    buttonStyle = document.getElementById("new_array").style;
-    // document.getElementById("insertion").title = ENABLED_BUTTON.nSquare;
-    buttonStyle.background = "#47535E";
-    buttonStyle.cursor = "pointer";
+
+    buttonStyle = document.getElementById("arr_sz").disabled = false;
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

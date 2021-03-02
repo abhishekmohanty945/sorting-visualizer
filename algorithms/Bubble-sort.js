@@ -1,5 +1,6 @@
 var animations = [];
 function bubble_sort(bars) {
+    animations = []
     disableSortButtons();
     bubble_sort_helper(bars);
     // console.log(bars*maxValue);
@@ -11,7 +12,7 @@ function bubble_sort(bars) {
 function bubble_sort_helper(bars) {
     var arr = bars;
     for(var i = 0; i < bars.length; i++) {
-        for(var j = 0; j < bars.length-1; j++) {
+        for(var j = 0; j < bars.length-1 - i; j++) {
             // if(all_bars[j].style.background != "white") all_bars[j].style.background = "red";
             // if(all_bars[j+1].style.background != "white") all_bars[j+1].style.background = "red";
             animations.push(

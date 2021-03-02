@@ -7,6 +7,7 @@ function merge_sort(arr) {
     merge_sort_helper(arr, 0, arr.length-1, animations);
     // console.log(arr);
     animate(animations);
+    animations = [];
 }
 
 function merge_sort_helper(arr, low, high, animations) {
@@ -127,4 +128,5 @@ async function animate(animations) {
         all_bars[i].style.background = "white";
     }
     restoreStoreButtons();
+    // animations = [];
 }
